@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Appointment | Dr. Abdul Haseeb</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment | Dr. Abdul Haseeb</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
-    <div class="logo">🌿 Dr. Abdul Haseeb</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="treatments.html">Treatments</a>
-      <a href="appointment.html">Appointment</a>
-    </nav>
+    <div class="container">
+      <h1>🌿 Dr. Abdul Haseeb</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="treatments.html">Treatments</a>
+        <a href="appointment.html">Appointment</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h1>Book an Appointment</h1>
-    <form action="https://formsubmit.co/abdulhaseeb42465@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New Appointment Request">
+
+  <section class="container appointment-section">
+    <h2>Book an Appointment</h2>
+    <p>We’ll get back to you within 24 hours via phone or email</p>
+
+    <form action="https://formsubmit.co/drabdulhaseeb@gmail.com" method="POST" class="appointment-form">
       <input type="hidden" name="_captcha" value="false">
-      
-      <label>Full Name:</label>
-      <input type="text" name="Name" required>
+      <input type="hidden" name="_next" value="thankyou.html">
 
-      <label>Email Address:</label>
-      <input type="email" name="Email" required>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Name" required />
 
-      <label>Phone Number:</label>
-      <input type="tel" name="Phone" required>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" required />
 
-      <label>Preferred Date:</label>
-      <input type="date" name="Preferred Date" required>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone" required />
 
-      <label>Condition / Concern:</label>
-      <textarea name="Condition" rows="4" required></textarea>
+      <label for="condition">Health Concern</label>
+      <input type="text" id="condition" name="Condition" placeholder="e.g. Migraine, PCOD, Asthma..." required />
 
-      <button type="submit">Send Appointment</button>
+      <label for="message">Describe Your Symptoms</label>
+      <textarea id="message" name="Message" rows="4" required></textarea>
+
+      <button type="submit">Submit Appointment</button>
     </form>
-  </main>
-  <footer>&copy; 2025 Dr. Abdul Haseeb</footer>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>📞 7760616080 &nbsp; | &nbsp; ✉️ drabdulhaseeb@gmail.com</p>
+      <p>&copy; 2025 Dr. Abdul Haseeb | Homeopathy Clinic</p>
+    </div>
+  </footer>
+
 </body>
 </html>
