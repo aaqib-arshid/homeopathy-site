@@ -105,3 +105,31 @@ footer {
   padding: 20px;
   font-size: 0.95em;
 }
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.about-content img.profile-pic {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.about-content div {
+  flex: 1;
+}
+.mission-section {
+  background: #e8f5e9;
+  padding: 40px 0;
+  text-align: center;
+}
+.location-section {
+  margin-top: 40px;
+}
+.map-container {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
