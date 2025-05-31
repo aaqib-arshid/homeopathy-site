@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointment | Dr. Abdul Haseeb</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 Dr. Abdul Haseeb</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="appointment.html">Appointment</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Book an Appointment</h1>
+    <form action="https://formsubmit.co/abdulhaseeb42465@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Appointment Request">
+      <input type="hidden" name="_captcha" value="false">
+      
+      <label>Full Name:</label>
+      <input type="text" name="Name" required>
+
+      <label>Email Address:</label>
+      <input type="email" name="Email" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="Phone" required>
+
+      <label>Preferred Date:</label>
+      <input type="date" name="Preferred Date" required>
+
+      <label>Condition / Concern:</label>
+      <textarea name="Condition" rows="4" required></textarea>
+
+      <button type="submit">Send Appointment</button>
+    </form>
+  </main>
+  <footer>&copy; 2025 Dr. Abdul Haseeb</footer>
+</body>
+</html>
